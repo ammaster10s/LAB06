@@ -7,9 +7,6 @@ import javax.swing.JPanel;
 public class ControlPanel{
 	public ControlPanel() {		
 		
-		//create a On/Of button and add to the power panel 
 		
-		//create two adjust panels and add to the layout of this control Panel
-
 	}
 }

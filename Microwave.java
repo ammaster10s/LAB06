@@ -3,41 +3,53 @@ import javax.swing.*;
 
 public class Microwave extends JFrame {
 	public Microwave() {
-		//Call the method: MicrowaveComponents
-		MicrowaveComponents();
 		
-		//Set JFrame
+		MicrowaveComponents();
+		setVisible(true);
+		setSize(600,300);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
        
 	}
 	
 	public void MicrowaveComponents() {
 
-  
+        
         JPanel panal01_MicrowaveLayout = new JPanel();
-		//Create the first panel of MicrowaveLayout to position its components
-		panal01_MicrowaveLayout.add(new JButton(),BorderLayout.EAST);
+        panal01_MicrowaveLayout.setLayout(new BorderLayout());
+	
+		panal01_MicrowaveLayout.add(new JButton(),BorderLayout.CENTER);
 		
-		//Add the first panel into the EAST of MicrowaveLayout
-
 		
-		//Create a button to place foods at the CENTER of MicrowaveLayout
-        panal01_MicrowaveLayout.add(new JB)
 		
-		//Create the second panel and set GridLayout for adding the button's numbers  
-
 		
-
-		//At the first panel, Create a textfield to display its time at the NORTH of MicrowaveLayout
-
-
-		//Use a FOR loop to add the button's numbers into the NumberLayout
+        JPanel panel02_NumberLayout = new JPanel();
+        panel02_NumberLayout.setLayout(new BorderLayout());
+        
+		
 
 		
-		//Create three button(Stop, 0, Start) and add them into the second JPanel
+        panel02_NumberLayout.add(new JTextField("Microwave Time Display"),BorderLayout.NORTH);
 
-
-		//Add the second JPanel to the first panel at the CENTER of MicrowaveLayout
-
+		JPanel grid01 = new JPanel();
+        grid01.setLayout(new GridLayout(4,3));
+        for (int i=1 ; i<10 ; i++){
+            grid01.add(new JButton(" "+ i));}
 		
+		
+        grid01.add(new JButton("Stop"));
+        grid01.add(new JButton("0"));
+        grid01.add(new JButton("Start"));
+
+		panel02_NumberLayout.add(grid01,BorderLayout.CENTER);
+        panal01_MicrowaveLayout.add(panel02_NumberLayout,BorderLayout.EAST);
+		
+        setLayout(new BorderLayout());
+        this.add(panel02_NumberLayout,BorderLayout.EAST);
+        this.add(panal01_MicrowaveLayout,BorderLayout.CENTER);
 	}
-}
+
+
+public static void main(String[] args){
+    Microwave test = new Microwave();
+   
+}}

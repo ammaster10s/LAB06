@@ -5,9 +5,11 @@ import javax.swing.*;
 public class AdjustPanel{
 
 	public AdjustPanel(String centerText) {
-		//create three buttons: Less, center text, and more 
-
-		//Add to this AdjustPanel panel
+        JPanel AdjustPanel = new JPanel();
+		AdjustPanel.setLayout(new FlowLayout());
+        AdjustPanel.add(new JButton("<<"));
+        AdjustPanel.add(new JButton(centerText));
+        AdjustPanel.add(new JButton(">>"));
 
 	}
 }

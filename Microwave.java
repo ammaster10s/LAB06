@@ -49,7 +49,6 @@ public class Microwave extends JFrame {
 	}
 
 
-public static void main(String[] args){
-    Microwave test = new Microwave();
+
    
-}}
+}

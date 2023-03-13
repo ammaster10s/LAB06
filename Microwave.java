@@ -6,7 +6,7 @@ public class Microwave extends JFrame {
 		
 		MicrowaveComponents();
 		setVisible(true);
-		setSize(600,300);
+		setSize(550,250);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
        
 	}
@@ -17,7 +17,7 @@ public class Microwave extends JFrame {
         JPanel panal01_MicrowaveLayout = new JPanel();
         panal01_MicrowaveLayout.setLayout(new BorderLayout());
 	
-		panal01_MicrowaveLayout.add(new JButton(),BorderLayout.CENTER);
+		panal01_MicrowaveLayout.add(new JButton("Food to be placed here"),BorderLayout.CENTER);
 		
 		
 		

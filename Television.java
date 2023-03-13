@@ -18,7 +18,7 @@ public class Television extends JFrame {
 	
 	public void TelevisionComponents() {
 		//create abutton_TelevisionScreen and panal_TelevisionButtonBar
-		JButton abutton_televisionscreen = new JButton();
+		JButton abutton_televisionscreen = new JButton("Screen");
         
 		//Add to this Television
         
